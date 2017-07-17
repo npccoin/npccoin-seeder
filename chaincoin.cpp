@@ -298,7 +298,7 @@ bool TestNode(const CService &cip, int &ban, int &clientV, std::string &clientSV
 
 /*
 int main(void) {
-  CService ip("chaincoin.sipa.be", 8333, true);
+  CService ip("chaincoin.org", 8333, true);
   vector<CAddress> vAddr;
   vAddr.clear();
   int ban = 0;
