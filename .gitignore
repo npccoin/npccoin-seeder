@@ -1,3 +1,7 @@
 *.o
 dnsseed*
 dnsstats.log
+CHC_Seeder.config
+CHC_Seeder.creator
+CHC_Seeder.files
+CHC_Seeder.includes
