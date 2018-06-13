@@ -397,13 +397,13 @@ extern "C" void* ThreadStats(void*) {
   return nullptr;
 }
 
-static const string mainnet_seeds[] = {"seed1.chaincoin.org", "seed2.chaincoin.org", "seed3.chaincoin.org", "seed4.chaincoin.org", "seed5.chaincoin.org", "seed6.chaincoin.org", "seed7.chaincoin.org", ""};
-static const string testnet_seeds[] = {""};
+static const string mainnet_seeds[] = {"chc1.hashunlimited.com", "chc2.hashunlimited.com", "seed1.chaincoin.org", "seed2.chaincoin.org", "seed3.chaincoin.org", "seed4.chaincoin.org", ""};
+static const string testnet_seeds[] = {"test.chaincoin.org", "testseed.hashunlimited.com", ""};
 static const string *seeds = mainnet_seeds;
 
 extern "C" void* ThreadSeeder(void*) {
   if (!fTestNet){
-    db.Add(CService("kjy2eqzk4zwi5zd3.onion", 8333), true);
+    db.Add(CService("kjz2eqxk4zwi5zd3.onion", 11994), true);
   }
   do {
     for (int i=0; seeds[i] != ""; i++) {
@@ -455,10 +455,10 @@ int main(int argc, char **argv) {
   bool fDNS = true;
   if (opts.fUseTestNet) {
       printf("Using testnet.\n");
-      pchMessageStart[0] = 0x0b;
-      pchMessageStart[1] = 0x11;
-      pchMessageStart[2] = 0x09;
-      pchMessageStart[3] = 0x07;
+      pchMessageStart[0] = 0xfb;
+      pchMessageStart[1] = 0xc2;
+      pchMessageStart[2] = 0x11;
+      pchMessageStart[3] = 0x02;
       seeds = testnet_seeds;
       fTestNet = true;
   }
