@@ -398,7 +398,7 @@ extern "C" void* ThreadStats(void*) {
 }
 
 static const string mainnet_seeds[] = {"chc1.hashunlimited.com", "chc2.hashunlimited.com", "seed1.chaincoin.org", "seed2.chaincoin.org", "seed3.chaincoin.org", "seed4.chaincoin.org", ""};
-static const string testnet_seeds[] = {"test.chaincoin.org", "testseed.hashunlimited.com", ""};
+static const string testnet_seeds[] = {"testseed.hashunlimited.com", ""};
 static const string *seeds = mainnet_seeds;
 
 extern "C" void* ThreadSeeder(void*) {
