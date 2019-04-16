@@ -1,7 +1,7 @@
-chaincoin-seeder
+npccoin-seeder
 ==============
 
-Chaincoin-seeder is a crawler for the Chaincoin network, which exposes a list
+NPCcoin-seeder is a crawler for the NPCcoin network, which exposes a list
 of reliable nodes via a built-in DNS server.
 
 Features:

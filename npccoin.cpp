@@ -6,7 +6,7 @@
 #include "serialize.h"
 #include "uint256.h"
 
-#define CHAINCOIN_SEED_NONCE  0x0539a019ca550825ULL
+#define NPCCOIN_SEED_NONCE  0x0539a019ca550825ULL
 
 using namespace std;
 
@@ -75,12 +75,12 @@ class CNode {
   
   void PushVersion() {
     int64 nTime = time(NULL);
-    uint64 nLocalNonce = CHAINCOIN_SEED_NONCE;
+    uint64 nLocalNonce = NPCCOIN_SEED_NONCE;
     int64 nLocalServices = 0;
     CAddress me(CService("0.0.0.0"));
     BeginMessage("version");
     int nBestHeight = GetRequireHeight();
-    string ver = "/chaincoin-seeder:0.01/";
+    string ver = "/npccoin-seeder:0.01/";
     vSend << PROTOCOL_VERSION << nLocalServices << nTime << you << me << nLocalNonce << ver << nBestHeight;
     EndMessage();
   }
@@ -298,7 +298,7 @@ bool TestNode(const CService &cip, int &ban, int &clientV, std::string &clientSV
 
 /*
 int main(void) {
-  CService ip("chaincoin.org", 8333, true);
+  CService ip("npccoin.com", 8333, true);
   vector<CAddress> vAddr;
   vAddr.clear();
   int ban = 0;

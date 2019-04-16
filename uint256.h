@@ -1,9 +1,9 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2011 The Bitcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
-// file license.txt or http://www.opensource.org/licenses/mit-license.php.
-#ifndef CHAINCOIN_UINT256_H
-#define CHAINCOIN_UINT256_H
+// file license.txt or http://www.opensource.com/licenses/mit-license.php.
+#ifndef NPCCOIN_UINT256_H
+#define NPCCOIN_UINT256_H
 
 #include "serialize.h"
 

@@ -1,5 +1,5 @@
-#ifndef _CHAINCOIN_H_
-#define _CHAINCOIN_H_ 1
+#ifndef _NPCCOIN_H_
+#define _NPCCOIN_H_ 1
 
 #include "protocol.h"
 

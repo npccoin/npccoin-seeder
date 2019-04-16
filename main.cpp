@@ -9,7 +9,7 @@
 #include <getopt.h>
 #include <atomic>
 
-#include "chaincoin.h"
+#include "npccoin.h"
 #include "db.h"
 
 using namespace std;
@@ -35,7 +35,7 @@ public:
   CDnsSeedOpts() : nThreads(96), nDnsThreads(4), nPort(53), mbox(NULL), ns(NULL), host(NULL), tor(NULL), fUseTestNet(false), fWipeBan(false), fWipeIgnore(false), ipv4_proxy(NULL), ipv6_proxy(NULL) {}
 
   void ParseCommandLine(int argc, char **argv) {
-    static const char *help = "chaincoin-seeder\n"
+    static const char *help = "npccoin-seeder\n"
                               "Usage: %s -h <host> -n <ns> [-m <mbox>] [-t <threads>] [-p <port>]\n"
                               "\n"
                               "Options:\n"
@@ -397,7 +397,7 @@ extern "C" void* ThreadStats(void*) {
   return nullptr;
 }
 
-static const string mainnet_seeds[] = {"chc1.hashunlimited.com", "chc2.hashunlimited.com", "seed1.chaincoin.org", "seed2.chaincoin.org", "seed3.chaincoin.org", "seed4.chaincoin.org", ""};
+static const string mainnet_seeds[] = {"chc1.hashunlimited.com", "chc2.hashunlimited.com", "seed1.npccoin.com", "seed2.npccoin.com", "seed3.npccoin.com", "seed4.npccoin.com", ""};
 static const string testnet_seeds[] = {"testseed.hashunlimited.com", ""};
 static const string *seeds = mainnet_seeds;
 

@@ -2,9 +2,9 @@
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Copyright (c) 2012-2017 The ChainCoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef _CHAINCOIN_COMPAT_H
-#define _CHAINCOIN_COMPAT_H 1
+// file COPYING or http://www.opensource.com/licenses/mit-license.php.
+#ifndef _NPCCOIN_COMPAT_H
+#define _NPCCOIN_COMPAT_H 1
 
 #ifdef WIN32
 #define _WIN32_WINNT 0x0501
