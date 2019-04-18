@@ -397,7 +397,7 @@ extern "C" void* ThreadStats(void*) {
   return nullptr;
 }
 
-static const string mainnet_seeds[] = {"seed1.npccoin.com", "seed2.npccoin.com", ""};
+static const string mainnet_seeds[] = {"node1.npccoin.com", "node2.npccoin.com", ""};
 static const string testnet_seeds[] = {"testseed.npccoin.com", ""};
 static const string *seeds = mainnet_seeds;
 
